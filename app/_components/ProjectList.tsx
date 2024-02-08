@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import myProjectPhoto from '../../public/my-robofriends-screen.webp';
 
 const ProjectList = () => {
   useEffect(() => {
@@ -20,30 +21,33 @@ const ProjectList = () => {
             <div className="col-lg-4 col-sm-12">
               <div className="project-wrapper__text load-hidden">
                 <h3 className="project-wrapper__text-title">
-                  Project My-robofriends
+                  My Robofriends
                 </h3>
                 <div>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    An example of a modern PWA application built on React/Next.js web framework.
+                  </p>
+                  <p className="mb-4">
+
+                    Under the hood:<br />
+                    - Typescript language <br />
+                    - Unit tests (Vitest) <br />
+                    - Continious Integration (Github Actions) <br />
                   </p>
                 </div>
-                <a
+                <Link
                   rel="noreferrer"
                   target="_blank"
                   className="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://mfarkha.github.io/my-robofriends/"
                 >
                   See Live
-                </a>
+                </Link>
                 <Link
                   rel="noreferrer"
                   target="_blank"
                   className="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/MFarkha/my-robofriends"
                 >
                   Source Code
                 </Link>
@@ -51,7 +55,7 @@ const ProjectList = () => {
             </div>
             <div className="col-lg-8 col-sm-12">
               <div className="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <Link rel="noreferrer" href="#!" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -62,12 +66,12 @@ const ProjectList = () => {
                     <Image
                       alt="Project Image"
                       className="img-fluid"
-                      src="/logo.png"
-                      width="100"
-                      height="100"
+                      src={myProjectPhoto}
+                      width={1024}
+                      height={768}
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

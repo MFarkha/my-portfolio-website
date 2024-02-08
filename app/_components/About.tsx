@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import myProfilePhoto from "../../public/profile-mini.jpg";
+import myProfilePhoto from "../../public/my-profile-mini.webp";
 
 const About = () => {
 
@@ -15,8 +15,8 @@ const About = () => {
               <Image
                 alt="My Profile Photo"
                 className="img-fluid rounded shadow-lg"
-                width={200}
-                height={300}
+                width={400}
+                height={600}
                 src={myProfilePhoto}
               />
             </div>

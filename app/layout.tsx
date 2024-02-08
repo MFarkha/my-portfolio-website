@@ -25,11 +25,9 @@ export default function RootLayout({
     <html lang="en" className="sr">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <Script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" strategy="lazyOnload"/> */}
       </head>
       <body>
         {children}
-        {/* <Script src="/scripts/animation.js" strategy="lazyOnload"/> */}
       </body>
     </html>
   );
