@@ -2,8 +2,8 @@
 const nextConfig = {
     output: 'export',
     // runtime: 'edge', // for Edge API Routes only
-    // images: {
-    //     unoptimized: true,
-    // },
+    images: {
+        unoptimized: true,
+    },
 };
 export default nextConfig;

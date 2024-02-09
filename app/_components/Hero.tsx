@@ -17,7 +17,8 @@ const Hero = () => {
       setMatches(e.matches)
     }
     mediaMatch.addEventListener('change', handler);
-    return () => mediaMatch.removeEventListener('change',handler);
+    setMatches(mediaMatch.matches)
+  return () => mediaMatch.removeEventListener('change',handler);
   }, []);
 
   return (
