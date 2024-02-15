@@ -10,7 +10,7 @@ type props = {
 const Project = (data: props) => {
     return (
           <div className="row">
-            <div className="col-lg-4 col-sm-12">
+            <div className="col-lg-6 col-sm-12">
               <div className="project-wrapper__text load-hidden">
                 <h3 className="project-wrapper__text-title">
                   { data.name }
@@ -23,14 +23,19 @@ const Project = (data: props) => {
                     { data.longDesc }
                   </p>
                 </div>
-                <Link
-                  rel="noreferrer"
-                  target="_blank"
-                  className="cta-btn cta-btn--hero"
-                  href={ data.liveView }
-                >
-                  See Live
-                </Link>
+                {
+                    (data.liveView)
+                        && (
+                            <Link
+                            rel="noreferrer"
+                            target="_blank"
+                            className="cta-btn cta-btn--hero"
+                            href={ data.liveView }
+                            >
+                                See Live
+                            </Link>
+                           )
+                }
                 <Link
                   rel="noreferrer"
                   target="_blank"
@@ -41,7 +46,7 @@ const Project = (data: props) => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-8 col-sm-12">
+            <div className="col-lg-6 col-sm-12">
               <div className="project-wrapper__image load-hidden">
                 <Link rel="noreferrer" href={ data.liveView } target="_blank">
                   <div
@@ -55,8 +60,8 @@ const Project = (data: props) => {
                       alt={ `Project ${data.name}` }
                       className="img-fluid"
                       src={data.photo}
-                      width={800} // 1024
-                      height={479} // 613
+                      width={800} // 1024 - 600 - 800
+                      height={479} // 613 - 359 - 479
                     />
                   </div>
                 </Link>

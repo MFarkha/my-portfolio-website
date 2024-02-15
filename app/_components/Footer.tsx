@@ -25,7 +25,7 @@ const Footer = () => {
         <p className="footer__text">
           © 2024 - Farkhad Maten <br/>
           <Link rel="noreferrer" href="https://github.com/MFarkha/my-portfolio-website" target="_blank">
-            Source code
+            GitHub
           </Link>
         </p>
       </div>
