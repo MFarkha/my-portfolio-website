@@ -30,7 +30,7 @@ const Hero = () => {
         <h1 className="hero-title">
           Hi, my name is <span className="text-color-main">Farkhad Maten</span>
           <br />
-          {`I'm the Developer you need.`}
+          {`I'm the Software Engineer you need.`}
         </h1>
         <p className="hero-cta load-hidden">
           <Link
