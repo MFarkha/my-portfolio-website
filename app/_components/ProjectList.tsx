@@ -83,7 +83,7 @@ const projectsData = [
   },
   {
     name: 'NASA Mission Control application',
-    shortDesc: `The app allows to 'launch' space missions based on real-life rocket and SpaceX data.
+    shortDesc: `'Launch' space missions based on real-life SpaceX data.
         No affiliation with NASA or SpaceX in any way. Created for educational purposes only.`,
     longDesc: (
       <>
@@ -101,7 +101,7 @@ const projectsData = [
       </>
     ),
     liveView: '',
-    sourceCode: 'https://github.com/MFarkha/my-face-recognition',
+    sourceCode: 'https://github.com/MFarkha/my-nasa-mc-project',
     photo: myProjectPhoto3,
   },
 ]
